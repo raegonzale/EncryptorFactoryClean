@@ -1,0 +1,11 @@
+C:\Users\raule\OneDrive\5. ESPECIALIZACION ITM\03. PATRONES DE DISEÑO\Trabajos\Trabajo Patrones Creacionales\EncryptorFactoryClean\EncryptorFactory.Domain\bin\Debug\net9.0\EncryptorFactory.Domain.deps.json
+C:\Users\raule\OneDrive\5. ESPECIALIZACION ITM\03. PATRONES DE DISEÑO\Trabajos\Trabajo Patrones Creacionales\EncryptorFactoryClean\EncryptorFactory.Domain\bin\Debug\net9.0\EncryptorFactory.Domain.dll
+C:\Users\raule\OneDrive\5. ESPECIALIZACION ITM\03. PATRONES DE DISEÑO\Trabajos\Trabajo Patrones Creacionales\EncryptorFactoryClean\EncryptorFactory.Domain\bin\Debug\net9.0\EncryptorFactory.Domain.pdb
+C:\Users\raule\OneDrive\5. ESPECIALIZACION ITM\03. PATRONES DE DISEÑO\Trabajos\Trabajo Patrones Creacionales\EncryptorFactoryClean\EncryptorFactory.Domain\obj\Debug\net9.0\EncryptorFactory.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\raule\OneDrive\5. ESPECIALIZACION ITM\03. PATRONES DE DISEÑO\Trabajos\Trabajo Patrones Creacionales\EncryptorFactoryClean\EncryptorFactory.Domain\obj\Debug\net9.0\EncryptorFactory.Domain.AssemblyInfoInputs.cache
+C:\Users\raule\OneDrive\5. ESPECIALIZACION ITM\03. PATRONES DE DISEÑO\Trabajos\Trabajo Patrones Creacionales\EncryptorFactoryClean\EncryptorFactory.Domain\obj\Debug\net9.0\EncryptorFactory.Domain.AssemblyInfo.cs
+C:\Users\raule\OneDrive\5. ESPECIALIZACION ITM\03. PATRONES DE DISEÑO\Trabajos\Trabajo Patrones Creacionales\EncryptorFactoryClean\EncryptorFactory.Domain\obj\Debug\net9.0\EncryptorFactory.Domain.csproj.CoreCompileInputs.cache
+C:\Users\raule\OneDrive\5. ESPECIALIZACION ITM\03. PATRONES DE DISEÑO\Trabajos\Trabajo Patrones Creacionales\EncryptorFactoryClean\EncryptorFactory.Domain\obj\Debug\net9.0\EncryptorFactory.Domain.dll
+C:\Users\raule\OneDrive\5. ESPECIALIZACION ITM\03. PATRONES DE DISEÑO\Trabajos\Trabajo Patrones Creacionales\EncryptorFactoryClean\EncryptorFactory.Domain\obj\Debug\net9.0\refint\EncryptorFactory.Domain.dll
+C:\Users\raule\OneDrive\5. ESPECIALIZACION ITM\03. PATRONES DE DISEÑO\Trabajos\Trabajo Patrones Creacionales\EncryptorFactoryClean\EncryptorFactory.Domain\obj\Debug\net9.0\EncryptorFactory.Domain.pdb
+C:\Users\raule\OneDrive\5. ESPECIALIZACION ITM\03. PATRONES DE DISEÑO\Trabajos\Trabajo Patrones Creacionales\EncryptorFactoryClean\EncryptorFactory.Domain\obj\Debug\net9.0\ref\EncryptorFactory.Domain.dll

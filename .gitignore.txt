@@ -1,0 +1,44 @@
+# Archivos de Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Salidas de compilación
+bin/
+obj/
+[Bb]uild/
+[Bb]uildOutput/
+
+# Archivos de publicación
+publish/
+out/
+
+# Archivos temporales
+*.tmp
+*.log
+*.vsidx
+*.vssscc
+*.vsscc
+*.dbmdl
+*.bak
+*.backup
+*.cache
+*.db
+
+# Configuración de paquetes
+packages/
+*.nupkg
+
+# Archivos generados por usuario
+*.rsuser
+
+# Archivos de test
+TestResults/
+*.coverage
+*.coveragexml
+
+# Archivos de OneDrive
+*.lnk
+~$*
