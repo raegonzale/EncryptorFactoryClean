@@ -1,0 +1,39 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "EncryptorFactory.Infrastructure/1.0.0": {
+        "dependencies": {
+          "EncryptorFactory.Domain": "1.0.0"
+        },
+        "runtime": {
+          "EncryptorFactory.Infrastructure.dll": {}
+        }
+      },
+      "EncryptorFactory.Domain/1.0.0": {
+        "runtime": {
+          "EncryptorFactory.Domain.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "EncryptorFactory.Infrastructure/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "EncryptorFactory.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

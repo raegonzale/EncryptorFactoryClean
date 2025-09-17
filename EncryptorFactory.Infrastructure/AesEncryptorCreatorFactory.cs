@@ -1,6 +1,7 @@
 ﻿using System.Security.Cryptography;
+using EncryptorFactory.Domain;
 
-namespace EncryptorFactory.Domain;
+namespace EncryptorFactory.Infrastructure;
 
 public sealed class AesEncryptorCreatorFactory : EncryptorCreatorFactory
 {

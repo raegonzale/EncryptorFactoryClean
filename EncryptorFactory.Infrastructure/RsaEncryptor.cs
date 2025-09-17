@@ -1,13 +1,14 @@
 ﻿using System.Security.Cryptography;
 using System.Text;
+using EncryptorFactory.Domain;
 
-namespace EncryptorFactory.Domain;
+namespace EncryptorFactory.Infrastructure;
 
-public sealed class RsaEncriptor : IEncryptor
+public sealed class RsaEncryptor : IEncryptor
 {
     private readonly RSA _rsa;
 
-    public RsaEncriptor(RSA rsaWithKeyPair)
+    public RsaEncryptor(RSA rsaWithKeyPair)
     {
         _rsa = rsaWithKeyPair ?? throw new ArgumentNullException(nameof(rsaWithKeyPair));
     }

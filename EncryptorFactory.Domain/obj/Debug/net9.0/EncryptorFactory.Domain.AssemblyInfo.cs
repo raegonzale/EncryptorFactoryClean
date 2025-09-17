@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EncryptorFactory.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+91e5250fbd5a63b72c9a1176272f9bbb09a8cc0b")]
 [assembly: System.Reflection.AssemblyProductAttribute("EncryptorFactory.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EncryptorFactory.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

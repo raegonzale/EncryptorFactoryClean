@@ -1,7 +1,8 @@
 ﻿using System.Security.Cryptography;
 using System.Text;
+using EncryptorFactory.Domain;
 
-namespace EncryptorFactory.Domain;
+namespace EncryptorFactory.Infrastructure;
 
 public sealed class AesEncryptor : IEncryptor
 {

@@ -9,6 +9,7 @@
       "EncryptorFactory.App/1.0.0": {
         "dependencies": {
           "EncryptorFactory.Domain": "1.0.0",
+          "EncryptorFactory.Infrastructure": "1.0.0",
           "Microsoft.Extensions.Configuration.Binder": "9.0.9",
           "Microsoft.Extensions.Hosting": "9.0.9",
           "Microsoft.Extensions.Options.ConfigurationExtensions": "9.0.9"
@@ -405,6 +406,17 @@
             "fileVersion": "1.0.0.0"
           }
         }
+      },
+      "EncryptorFactory.Infrastructure/1.0.0": {
+        "dependencies": {
+          "EncryptorFactory.Domain": "1.0.0"
+        },
+        "runtime": {
+          "EncryptorFactory.Infrastructure.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
       }
     }
   },
@@ -611,6 +623,11 @@
       "hashPath": "system.diagnostics.eventlog.9.0.9.nupkg.sha512"
     },
     "EncryptorFactory.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "EncryptorFactory.Infrastructure/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

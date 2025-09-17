@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <ItemGroup>
-    <None Remove="appsettings.json" />
+    <None Update="appsettings.json" />
   </ItemGroup>
 
   <ItemGroup>
@@ -12,6 +12,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\EncryptorFactory.Domain\EncryptorFactory.Domain.csproj" />
+    <ProjectReference Include="..\EncryptorFactory.Infrastructure\EncryptorFactory.Infrastructure.csproj" />
   </ItemGroup>
 
   <ItemGroup>

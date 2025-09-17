@@ -1,4 +1,5 @@
 ﻿using EncryptorFactory.Domain;
+using EncryptorFactory.Infrastructure;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -6,7 +7,7 @@ using Microsoft.Extensions.Hosting;
 var host = Host.CreateDefaultBuilder(args)
     .ConfigureAppConfiguration(cfg =>
     {
-        cfg.AddJsonFile("appsettings.json", optional: true, reloadOnChange: true);
+        cfg.AddJsonFile("appsettings.json", optional: false, reloadOnChange: true);
     })
     .ConfigureServices((ctx, services) =>
     {
@@ -14,16 +15,10 @@ var host = Host.CreateDefaultBuilder(args)
 
         var alg = ctx.Configuration["Crypto:Algorithm"]?.Trim().ToUpperInvariant() ?? "AES";
 
-        switch (alg)
-        {
-            case "RSA":
-                services.AddSingleton<EncryptorCreatorFactory, RsaEncriptorCreatorFactory>();
-                break;
-            case "AES":
-            default:
-                services.AddSingleton<EncryptorCreatorFactory, AesEncryptorCreatorFactory>();
-                break;
-        }
+        if (alg == "RSA")
+            services.AddSingleton<EncryptorCreatorFactory, RsaEncryptorCreatorFactory>();
+        else
+            services.AddSingleton<EncryptorCreatorFactory, AesEncryptorCreatorFactory>();
     })
     .Build();
 
@@ -45,4 +40,3 @@ var plain = svc.Read(cipher);
 Console.WriteLine($"Tarjeta original: {original}");
 Console.WriteLine($"Tarjeta cifrada({cipher.Length} chars): {cipher}");
 Console.WriteLine($"Tarjeta lectura   : {plain}");
-
