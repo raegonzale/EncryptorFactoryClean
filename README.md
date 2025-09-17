@@ -1,29 +1,30 @@
 EncryptorFactoryClean:
 
-Proyecto académico en C# (.NET 8) que implementa el patrón de diseño Factory Method para una fábrica de cifradores con soporte para AES y RSA, aplicando principios de Inversión de Control (IoC) e Inyección de Dependencias (DI).
+Proyecto académico en C# (.NET 9) que implementa el patrón de diseño Factory Method para una fábrica de cifradores con soporte para AES y RSA, aplicando principios de Inversión de Control (IoC) e Inyección de Dependencias (DI).
 
 Descripción:
 
-Este proyecto demuestra cómo desacoplar la creación de objetos de cifrado (encryptors) utilizando el patrón Factory Method, permitiendo seleccionar el algoritmo de forma dinámica mediante configuración.
+Este proyecto demuestra cómo desacoplar la creación de los cifradores de su uso, permitiendo seleccionar el algoritmo **AES** o **RSA** por configuración, sin que la capa de dominio conozca clases concretas.
 - AES → Simétrico, rápido y seguro para grandes volúmenes de datos.  
 - RSA → Asimétrico, ideal para intercambio seguro de claves y autenticación.  
 
-La arquitectura se divide en dos capas:
-
-- EncryptorFactory.Domain → Lógica de dominio, interfaces y fábricas abstractas.  
-- EncryptorFactory.App → Aplicación de consola con IoC/DI y pruebas de funcionamiento.  
-
 Arquitectura:
 
-- `IEncryptor` → Interfaz con métodos `Encrypt` y `Decrypt`.  
-- `EncryptorCreatorFactory` → Creador abstracto.  
-- `AesEncryptorCreatorFactory` y `RsaEncryptorCreatorFactory` → Creadores concretos.  
-- `AesEncryptor` y `RsaEncryptor` → Implementaciones de cifradores.  
-- `DataService` → Servicio que recibe la fábrica por inyección de dependencias.  
+Capa Domain (solo abstracciones + servicio):
+- `IEncryptor` → `Encrypt(string)`, `Decrypt(string)`
+- `EncryptorCreatorFactory` → `Create(): IEncryptor`
+- `DataService` → usa solo `EncryptorCreatorFactory` (no ve AES/RSA)
+
+- Capa Infrastructure (concretas):
+- `AesEncryptor`, `RsaEncryptor` → implementan `IEncryptor`
+- `AesEncryptorCreatorFactory`, `RsaEncryptorCreatorFactory` → devuelven el producto concreto
+
+Capa App (selección por config + DI):
+- Registra una fábrica concreta según `appsettings.json` y la inyecta en `DataService`.
 
 UML:
 
-<img width="613" height="756" alt="image" src="https://github.com/user-attachments/assets/929fa491-7209-47e9-9572-5487a7a27845" />
+<img width="576" height="702" alt="image" src="https://github.com/user-attachments/assets/fdda2d87-66e4-4aa0-bca3-d96bb16947a1" />
 
 Ejecución:
 
@@ -31,20 +32,14 @@ Ejecución:
    git clone https://github.com/raegonzale/EncryptorFactoryClean.git
    cd EncryptorFactoryClean
 - Restaura dependencias:
-bash
-Copiar código
 dotnet restore
-Corre la aplicación:
-
-bash
-Copiar código
+- Corre la aplicación:
 dotnet run --project src/EncryptorFactory.App
 
 -Configuración:
 El algoritmo se define en appsettings.json:
 
 json
-Copiar código
 {
   "Crypto": {
     "Algorithm": "AES"
